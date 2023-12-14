@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>CONSIGNMENT</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <!-- Page Loader ends -->
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed mdb-shadow-2"
+      style="background-color: #181717"
+    >
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a
+          class="text-white fs-1 logo-head text-decoration-none"
+          href="index.html"
+          ><h1>richmond</h1></a
+        >
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars fa-2x text-white"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto mb-2 me-5 mb-lg-0">
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="#services-nav"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="about.html"
+                >About-us</a
+              >
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="#">Contact-us</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+          <!-- Icon -->
+          <a class="text-reset me-3" href="#">
+            <i class="fas fa-shopping-cart fa-1x text-white"></i>
+          </a>
+
+          <!-- Notifications -->
+          <div class="dropdown">
+            <a
+              class="text-reset me-3 dropdown-toggle hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bell fa-1x text-white"></i>
+              <span class="badge rounded-pill badge-notification bg-danger"
+                >1</span
+              >
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <section
+      class="hero-section align-self-center d-flex justify-content-center"
+    >
+      <div class="container">
+        <div class="row p-4">
+          <div
+            class="col-md-6 align-self-center d-flex justify-content-center align-items-center"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <div class="custom-hero hero-left-content">
+              <h4>Logistic Delivery Around The World</h4>
+              <p class="text-white">
+                logistic hero range of cost-savings features, including
+                automated tracking and real-time inventory businesses
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-warning btn-rounded me-3"
+                data-mdb-ripple-color="dark"
+              >
+                About-us
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-warning btn-rounded me-3"
+                data-mdb-ripple-color="dark"
+              >
+                our service
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-md-6 mt-5 mb-4 d-flex justify-content-center"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <img
+              class="main-hero-image"
+              src="assets/img/hero-2.png"
+              alt="logistic"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------track section------------------------- -->
+    <section class="custom-tracking">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-lg-7 col-md-8 mx-auto">
+            <div
+              class="track-default shadow-4-strong d-flex flex-column justify-content-center align-self-center"
+              data-aos="zoom-in-down"
+            >
+              <label for="search" class="text-label">track & trace</label>
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="tracking-number"
+                  aria-label="search"
+                  aria-describedby="search-addon"
+                />
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-mdb-ripple-init
+                >
+                  track
+                </button>
+              </div>
+              <label for="search" class="mt-4 text-label"
+                >find a location</label
+              >
+
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="tracking-number"
+                  aria-label="search"
+                  aria-describedby="search-addon"
+                />
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-mdb-ripple-init
+                >
+                  track
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------track section ends----------------------- -->
+    <!-- ----------------------service section------------------------- -->
+    <section class="custom-service">
+      <div class="container-fluid">
+        <div class="row p-3">
+          <div class="col">
+            <div
+              class="service-head d-flex flex-column text-center justify-content-center align-items-center"
+            >
+              <h6 style="color: orange; font-weight: bold">
+                WHAT WE PROVIDE FOR CLIENTS
+              </h6>
+              <h1 style="font-weight: bolder">QUICK CARGO SERVICES</h1>
+            </div>
+          </div>
+        </div>
+        <div class="services-card-group p-4">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 mt-4 mt-4">
+              <div
+                class="card mx-auto shadow-4-strong"
+                style="width: 85%"
+                data-aos="fade-down-right"
+              >
+                <div
+                  class="bg-image hover-overlay"
+                  data-mdb-ripple-init
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="assets/img/services-details-one.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    AIR FREIGHT <i class="fas fa-plane-departure fa-1x"></i>
+                  </h5>
+                  <h6 class="card-text">Delivery within 3 days</h6>
+                  <ul>
+                    <li>Airport service</li>
+                    <li>24 hours in 7 days a week</li>
+                    <li>priority delivery service</li>
+                  </ul>
+                  <a href="#!" class="btn btn-warning" data-mdb-ripple-init
+                    >explore</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 mt-4">
+              <div
+                class="card mx-auto shadow-4-strong"
+                style="width: 85%"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <div
+                  class="bg-image hover-overlay"
+                  data-mdb-ripple-init
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="assets/img/service_details-two.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    OCEAN FREIGHT <i class="fas fa-ship fa-1x"></i>
+                  </h5>
+                  <h6 class="card-text">Delivery within 3 days</h6>
+                  <ul>
+                    <li>Airport service</li>
+                    <li>24 hours in 7 days a week</li>
+                    <li>priority delivery service</li>
+                  </ul>
+                  <a href="#!" class="btn btn-warning" data-mdb-ripple-init
+                    >explore</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 mt-4">
+              <div
+                class="card mx-auto shadow-4-strong"
+                style="width: 85%"
+                data-aos="fade-down-left"
+              >
+                <div
+                  class="bg-image hover-overlay"
+                  data-mdb-ripple-init
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="assets/img/service-detailes-three.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    ROAD FREIGHT <i class="fas fa-road fa-1x"></i>
+                  </h5>
+                  <h6 class="card-text">Delivery within 3 days</h6>
+                  <ul>
+                    <li>Airport service</li>
+                    <li>24 hours in 7 days a week</li>
+                    <li>priority delivery service</li>
+                  </ul>
+                  <a href="#!" class="btn btn-warning" data-mdb-ripple-init
+                    >explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------cargo section------------------------- -->
+    <section
+      class="about-cargo align-self-center d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <div class="row cargo-pad-hold">
+          <div
+            class="col-sm-10 col-md-12 col-lg-6 d-flex justify-content-center align-items-center align-self-center g-5"
+            data-aos="zoom-in"
+          >
+            <div class="cargo-text">
+              <h6>SAFE & AFFORDABLE CARGO</h6>
+              <h2>ABOUT CARGO SHIPMENT</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quisquam nesciunt corrupti temporibus similique dicta animi,
+                deserunt, aut id quaerat tempora in quam nisi repudiandae
+                praesentium numquam mollitia est eligendi quasi nostrum. Optio,
+                cumque iusto pariatur deserunt impedit culpa possimus, accusamus
+              </p>
+              <div class="row mt-5">
+                <div class="col-6">
+                  <i class="fas fa-box fa-2x"></i>
+                  <h2>450,000</h2>
+                  <h6 class="text-warning">parcel shipped safely</h6>
+                </div>
+                <div class="col-6">
+                  <i class="fas fa-globe fa-2x"></i>
+                  <h2>120,000</h2>
+                  <h6 class="text-warning">cities served worldwide</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-12 col-lg-6 align-self-center">
+            <div
+              class="cargo-image d-flex justify-content-center align-items-center align-self-center"
+              data-aos="zoom-in-up"
+            >
+              <img src="assets/img/cargo-detail-hold-1.png" alt="cargo-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------explore section------------------------- -->
+    <!-- ***** Explore Area Starts ***** -->
+    <section class="explore-section" id="explore">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left-content">
+              <h2>Explore Our Products</h2>
+              <span data-aos="zoom-in">
+                fugit libero porro amet nobis, iure soluta iusto asperiores
+                dolore vero. Consequuntur dignissimos architecto perspiciatis,
+                necessitatibus laborum labore iusto quod consequatur illum nobis
+                quae blanditiis?</span
+              >
+              <div class="quote">
+                <i class="fa fa-quote-left fa-3x"></i>
+                <p data-aos="zoom-in">
+                  Asperiores dicta perspiciatis voluptatum enim consequuntur! Ex
+                  ipsum iste ducius iusto? Omnis.
+                </p>
+              </div>
+              <p data-aos="zoom-in-up">
+                Dignissimos accusantium magni excepturi sunt illo dolor vitae
+                nam ratione qui dicta numquam temporibus, natus necessitatibus
+                facilis perspiciatis non doloremque rerum itaque.
+              </p>
+              <p data-aos="zoom-in-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                modi quia quaerat hic rerum? Debitis eos delectus soluta
+                officia, culpa incidunt distinctio corrupti sint repudiandae,
+                eveniet facilis placeat tempore praesentium?
+              </p>
+              <div class="main-border-button" data-aos="zoom-in-up">
+                <a href="#"><button>Discover More</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="right-content">
+              <div class="row g-4">
+                <div class="col-lg-6 d-none d-lg-block">
+                  <div class="explore-right-text">
+                    <h4 data-aos="fade-up" data-aos-duration="3000">
+                      shiping worldwide
+                    </h4>
+                    <span data-aos="zoom-out-down" data-aos-duration="3000"
+                      >adequate transportation</span
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="explore-image">
+                    <img
+                      data-aos="flip-right"
+                      data-aos-duration="3000"
+                      data-aos-easing="ease-out-cubic"
+                      src="assets/img/warehouse-worker-2.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="explore-image">
+                    <img
+                      data-aos="flip-left"
+                      data-aos-duration="3000"
+                      data-aos-easing="ease-out-cubic"
+                      src="assets/img/warehouse-workers-1.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-none d-lg-block">
+                  <div class="explore-right-text">
+                    <h4 data-aos="fade-up" data-aos-duration="3000">
+                      delivery in 3 days
+                    </h4>
+                    <span data-aos="zoom-out-down" data-aos-duration="3000"
+                      >Over 304 country</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** logistics section Starts ***** -->
+    <section class="logistic-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col">
+            <h3 class="text-center fs-1">our best logistics solution</h3>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="logistic-left">
+              <div class="logistic-image">
+                <img src="assets/img/logictices.jpg" alt="image" />
+              </div>
+              <div class="logistic-left-text mt-5">
+                <p>
+                  our goal is to ensure that you have access to the most
+                  suitable logistices soltion that optimize your supply chain
+                  operation, reduce cost and meet your business needs. our
+                  supply chain solutions team provides detailed specification
+                </p>
+                <h4> <i class="fab fa-keycdn fa-1x"></i>Experienced Movers</h4>
+                <h4> <i class="fab fa-keycdn fa-1x"></i>All in one services</h4>
+              </div>
+              <div class="logistic-sec-text">
+                <p>
+                  "Overall, there logistics provides top-notch shipping services
+                  , and i will continue to use them for all of my shipping
+                  needs- highly recommend"
+                </p>
+                <h5>christian okorie, <em>director</em></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="logistic-right">
+              <div class="row mb-5">
+                <div class="col">
+                  <h3 class="text-center">
+                    the statistices speak for themself
+                  </h3>
+                </div>
+              </div>
+              <div class="logistic-right-text">
+                <div class="row g-2">
+                  <div class="col-lg-6">
+                    <div class="logistic-box">
+                      <i class="fas fa-box-archive fa-3x text-warning"></i>
+                      <h6>6k Delivery Packages</h6>
+                      <p>
+                        timely and reliable delivery can boost customer
+                        satisfaction and loyalty.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="logistic-box">
+                      <i class="fas fa-earth-americas fa-3x"></i>
+                      <h6>94 Countries covered</h6>
+                      <p>
+                        businesses need to have a presence in multiple countries
+                        to stay competitive.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="logistic-box">
+                      <i class="fab fa-opencart fa-3x"></i>
+                      <h6>342 Tons of goods</h6>
+                      <p>
+                        organized logistics system that handle large volumes of
+                        efficiently
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="logistic-box">
+                      <i class="fas fa-truck fa-3x"></i>
+                      <h6>Thousands of daily delivery</h6>
+                      <p>
+                        supply to countries across the globe, with logistics
+                        care
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col">
+                      <div class="logistic-right-image">
+                        <img
+                          src="assets/img/logistices-2.jpg"
+                          alt="map"
+                          style="width: 100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1
+              class="text-center fs-1"
+              style="font-weight: bolder; color: orange"
+            >
+              Our offices round the globe
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="map">
+              <img
+                src="assets/img/air-home-map.gif"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** blog section Starts ***** -->
+    <section class="our-blog section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-heading">
+              <h2>Check Out What Is Trending In Our Latest News</h2>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="top-dec">
+              <img src="assets/images/blog-dec.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left-image">
+              <a href="#"
+                ><img
+                  style="width: 100%"
+                  src="assets/img/side-image03.jpg"
+                  alt="Workspace Desktop"
+              /></a>
+              <div class="info">
+                <div class="inner-content">
+                  <a class="blog-head-text" href="#"
+                    ><h4>Logistics Survey &amp; Digital Marketing</h4></a
+                  >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur and sed doer ket
+                    eismod tempor incididunt ut labore et dolore magna...
+                  </p>
+                  <div class="main-blue-button">
+                    <button
+                      data-aos="slide-right"
+                      data-aos-duration="3000"
+                      class="aos-init aos-animate"
+                    >
+                      <a href="#">Discover More</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="right-list">
+              <ul class="p-0">
+                <li>
+                  <div class="left-content align-self-center">
+                    <span><i class="fa fa-calendar"></i> 18 Mar 2021</span>
+                    <a href="#"><h4>illegal shipment Found at Doc hold</h4></a>
+                    <p>
+                      Lorem ipsum dolor sit amsecteturii and sed doer ket
+                      eismod...
+                    </p>
+                  </div>
+                  <div class="right-image">
+                    <a href="#"
+                      ><img src="assets/img/side-image01.jpg" alt=""
+                    /></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="left-content align-self-center">
+                    <span><i class="fa fa-calendar"></i> 14 Mar 2021</span>
+                    <a href="#"><h4>Lagest shiping by Sea</h4></a>
+                    <p>
+                      Lorem ipsum dolor sit amsecteturii and sed doer ket
+                      eismod...
+                    </p>
+                  </div>
+                  <div class="right-image">
+                    <a href="#"
+                      ><img src="assets/img/side-image02.jpg" alt=""
+                    /></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="left-content align-self-center">
+                    <span><i class="fa fa-calendar"></i> 06 Mar 2021</span>
+                    <a href="#"
+                      ><h4>Package Delivery &amp; Item Retrival</h4></a
+                    >
+                    <p>
+                      Lorem ipsum dolor sit amsecteturii and sed doer ket
+                      eismod...
+                    </p>
+                  </div>
+                  <div class="right-image">
+                    <a href="#"
+                      ><img src="assets/img/side-image04.jpg" alt=""
+                    /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ...................................contact..................................................... -->
+    <section class="contact-section section-padding">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-12 col-12">
+            <em class="text-white">Say Hello</em>
+            <h2 class="text-white mb-4 pb-lg-2">Contact</h2>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <form
+              action="#"
+              method="post"
+              class="custom-form contact-form"
+              role="form"
+            >
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <label for="name" class="form-label"
+                    >Name <sup class="text-danger">*</sup></label
+                  >
+
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Jackson"
+                    required=""
+                  />
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <label for="email" class="form-label">Email Address</label>
+
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    pattern="[^ @]*@[^ @]*"
+                    class="form-control"
+                    placeholder="Jack@gmail.com"
+                    required=""
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label"
+                    >How can we help?</label
+                  >
+
+                  <textarea
+                    name="message"
+                    rows="4"
+                    class="form-control"
+                    id="message"
+                    placeholder="Message"
+                    required=""
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="col-lg-5 col-12 mx-auto mt-3">
+                <button type="submit" class="form-control">Send Message</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
+            <iframe
+              class="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ...................................footer..................................................... -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12 me-auto">
+            <em class="text-white d-block mb-4">Where to find us?</em>
+
+            <strong class="text-white">
+              <i class="bi-geo-alt me-2"></i>
+              Bandra West, Mumbai, Maharashtra 400050, India
+            </strong>
+
+            <ul class="social-icon mt-4">
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link bi-facebook"> </a>
+              </li>
+
+              <li class="social-icon-item">
+                <a href="#" target="_new" class="social-icon-link bi-twitter">
+                </a>
+              </li>
+
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link bi-whatsapp"> </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+            <em class="text-white d-block mb-4">Contact</em>
+
+            <p class="d-flex mb-1">
+              <strong class="me-2">Phone:</strong>
+              <a href="tel: 305-240-9671" class="site-footer-link">
+                +234 8122353006
+              </a>
+            </p>
+
+            <p class="d-flex">
+              <strong class="me-2">Email:</strong>
+
+              <a href="alason010@gmail.com" class="site-footer-link">
+                alason010@gmail.com
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-5 col-12">
+            <em class="text-white d-block mb-4">Opening Hours.</em>
+
+            <ul class="opening-hours-list">
+              <li class="d-flex">
+                Monday - Friday
+                <span class="underline"></span>
+
+                <strong>9:00 - 18:00</strong>
+              </li>
+
+              <li class="d-flex">
+                Saturday
+                <span class="underline"></span>
+
+                <strong>11:00 - 16:30</strong>
+              </li>
+
+              <li class="d-flex">
+                Sunday
+                <span class="underline"></span>
+
+                <strong>Closed</strong>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-8 col-12 mt-4">
+            <p class="copyright-text mb-0">Copyright © richmond 2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ***** Explore Area Ends ***** -->
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- aos script -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <!-- loader script -->
+    <script src="assets/vendor/loader plugin/plugins.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript " src="js/script.js"></script>
+  </body>
+</html>
